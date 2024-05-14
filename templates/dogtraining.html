@@ -1,0 +1,88 @@
+{% include 'navbar.html' %}
+{% load static %}
+<!--
+Author: Amy Mummert 
+Date: 1/23/2023
+Description: This is the dog training page that contains guided dog training tutorials.
+-->
+<!DOCTYPE HTML>
+<!--<head> contains css, js links, lang, charset, meta, and links to google fonts.-->
+<head>
+  <html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <script src="{% static 'scripts/static.js' %}"></script>
+</head>
+<body>
+  <h1 class="profile_header">Dog Training</h1>
+    <h2 id="training-quote">"Every snack you make, every bit you take. I'll be watching you." - Unknown </h2>
+    <img id="dog1" src="{% static 'dognose.jpg' %}"/>
+        <article id="trainingarticle">
+            <h2 id="article-header_6">Touch Command<h2>
+            <p id="training-format"> The touch command is one of the first commands you should teach your dog. 
+            Dog's use their noses to explore the world around them. Sniffing helps a dog understand their surroundings and the people they encounter. </p>
+            <p id="training-format" > You will need a clicker or some form of reward to perform this command.
+            The reward can be a toy only provided to your dog during your training sessions or a highly rewarding food treat. </p>
+            <p id="training-format" >Follow the guide to get started:</p>
+            <ol>
+              <li id="order">With your dog in front of you, hold your hand, palm up, out towards your dog</li>
+              <li id="order">Hold a reward in the other hand.</li>
+              <li id="order">Give the command: Touch</li>
+              <li id="order">When your dog sniffs your hand, give the reward (or click), and say "Good Touch"</li>
+              <li id="order">Repeat ten times a training session until your dog has mastered the touch command.</li>
+            </ol>
+            </article>
+            <img id="dog2" src="{% static 'dogsit.jpg' %}"/>
+            <article id="trainingarticle_2">  
+              <h2 id="article-header_6">Sit</h2>
+              <p id="training-format">The sit command uses the command and reward system. Teaching your dog to sit can be very rewarding, not only for you but for your dog as well. </p>
+              <p id="training-format">You will need a clicker or some form of reward to perform this command.  We recommend using a leash during your first training sessions so you can work with your dog with them running amok. </p>
+              <p id="training-format">Follow the guide to get started:</p>
+              <ol>
+                <li id="order">With your dog in front of you, hold the reward in your hand and place it in front of your dogs nose.</li>
+                <li id="order">Slowly lift your hand with the reward over your dogs head towards their tail.</li>
+                <li id="order">Give the command: Sit</li>
+                <li id="order">When your dog sits give them the reward and say "Good Sit"</li>
+                <li id="order">Repeat ten times a training session until your dog has mastered the sit command.</li>
+              </ol>
+          </article>
+          <img id="dog3" src="{% static 'dogdown.jpg' %}"/>
+          <article id="trainingarticle_3">
+            <h2 id="article-header_7">Down</h2>
+            <p id="training-format"> There are coulpe of options for starting to teach your dog down. You can start with the touch command
+                or by by placing your hand, palm down, in front of your dog and proceed with the down command. </p>
+            <p id="training-format"> It's important to remember that dogs lay down in different ways.  The goal of the down command is to get your dog to roll their
+                hips to the side rather than their legs under their hips.  Some dogs will lay down but with their legs underneath their hips.</p>
+            <p id="training-format">Follow the guide to get started:</p>
+            <ol>
+              <li id="order">Start with the touch command to get your dog positioned in front of you and ready to train.</li>
+              <li id="order">Hold your hand out, palms down, and slowly move your hand down towards the ground while giving the down command.</li>
+              <li id="order">Give the command: Down (while moving your hand towards the ground).</li>
+              <li id="order">When your dog lays down say "Down"</li>
+              <li id="order">Repeat ten times a training session until your dog has mastered the down command.</li>
+            </ol>
+            </article>
+            <img id="dog4" src="{% static 'dogstay.jpg' %}"/>
+            <article id="trainingarticle_4">  
+              <h2 id="article-header_7" >Stay</h2>
+              <p id="training-format" class="article-format"> The stay command might seem scary but it's actually pretty simple to teach. This command is an important one.  
+                  Not only can it keep your dog safe but it could prevent your dog from jumping on people, impulsively running off, 
+                  or just keeping them in one location in your home for a few moments. </p>
+              <p id="training-format" class="article-format">Follow the guide to get started:</p>
+              <ol>
+                <li id="order">Stand in front of your dog and give the sit command.</li>
+                <li id="order">Hold your hand out in front of you, like the stop signal.</li>
+                <li id="order">Give the command: Down</li>
+                <li id="order">Wait just a moment before rewarding, and say "Good Stay"</li>
+                <li id="order">When you first start training stay, start with just a few seconds then increase the time each training session that you ask them to stay.</li>
+                <li id="order">Repeat ten times a training session until your dog has mastered the stay command.</li>
+              </ol>
+          </article>
+</body>         
+</html>
+        

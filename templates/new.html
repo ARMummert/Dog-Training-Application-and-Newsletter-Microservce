@@ -1,0 +1,33 @@
+{% include 'navbar.html' %}
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title> Subscribe to Our Newsletter </title>
+        
+    </head>
+  
+    <body>
+        <div>
+            <h1 class="profile_header">Subscribe to Our Monthly Newsletter</h1>
+        </div>
+        <div id="new" class="container">
+           <div> <h2> Subscribe </h2> </div>
+            <div>
+                {% if email %}
+                <p>{{ email }} has been {{ action }}.</p>
+                {% endif %}
+            </div>
+        {% if form %}
+            <div>
+                <form class="input_1"method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form }}
+                    <br>
+                    <button type="submit" id="subscribe-btn" class="btn btn-success">Subscribe!</button>
+                </form>
+            </div>
+        {% endif %}
+        </div>
+    </body>
+</html>

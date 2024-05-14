@@ -1,0 +1,87 @@
+{% include 'navbar.html' %}
+{% load static %}
+<!--
+Author: Amy Mummert 
+Date: 1/23/2023
+Description: Home page with quote, video, and web app information.
+-->
+<!DOCTYPE HTML>
+<!--<head> contains css, js links, lang, charset, meta, and links to google fonts.-->
+<head>
+  <html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <script src="{% static 'scripts/static.js' %}"></script>
+</head>
+<style>
+
+body {
+  background-image: url("{% static '/images/bernese-mountain-dog.jpg' %}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+}
+</style>
+<body>
+  <article>
+        <h2 id="article-header">Welcome to Petiquette</h2>
+        <h2 id="quote">"Dogs do speak, but only to those who know how to listen" -Orhan Pamuk</h2> 
+  </article>
+  <article id="article1" >  
+      <h2 id="article-header_1">New Feature !</h2>
+      <p class="article-format_1">Create your dog their own personal profile with our new Dog Profile page. Click create profile to get started. 
+      <br><button id="dog-profile-btn" type="submit" onClick="window.location.href='dogprofile/'">Create Dog Profile</button></p>
+  </article>  
+  <article id="article2">  
+      <h2 id="article-header_2">Coming Soon....</h2>
+     
+      <p class="article-format_2">  Petiquette has started development to provide our members with video training tutorials. Each video walks you through
+                              our step by step process providing visual learners the opportunity to be successful during training sessions.</p>
+      <br> <p class="article-format_3"> Our developers are working hard to make this happen and expect to have videos ready for us by the end of the year.</p>
+  </article>
+  <article id="article3">
+      <h2 id="article-header_3">Petiquette Training 101</h2>
+      <p class="article-format_4"> Training your dog can be a challenge.  Dogs, especially puppies, have their eyes set on anything that catches their attention. This can be avoided entirely with good training and obedience skills.
+      <br>
+      <p class="article-format_4">We value our members and encourage four words to remember when actively training your dog: 
+      <span>Patience, Persistence, Love, Food </span></p>
+      <p class="article-format_4">We offer dog training methods that guide you through training you dog. Each method provides a step-by-step guide for you to train efficiently. </p>
+      <br><button id="start-here-btn" type="submit"  onClick="window.location.href='dogtraining/'"><span>Start Training</span></button></br></p> 
+  </article>
+  <article id="article4">  
+      <h2 id="article-header_4">Command and Reward System</h2>
+      <p "article-format_5">  We encourage use of our Command and Reward System when you first start training your dog.
+           You can slowly remove the reward as training progresses so your dog doesn't become reward reliant.</p>                        
+      <p "article-format_5">  Rewards can range from your dog's favoriate treat or a favorite toy you only give to your dog during training sessions. 
+           Toys and play time as a reward can be highly motivating for your dog. Using a clicker while training is another good option.</p>
+  </article>
+<section id="article5">
+    <h2 id="article-header_5">Testimonials</h2>
+     <figure class="snip1139">
+        <blockquote> Petiquette taught me how to train my dog in an easy step by step process.
+          <div class="author">
+            <h5>Abi <span>- Dog Owner</span></h5>
+          </div>
+        </blockquote>
+      </figure>
+      <figure class="snip1139 hover">
+        <blockquote> I found Petiquette online and gave it try.  I liked the free training methods and as a new dog owner the step-by-step guides were helpful.
+          <div class="author">
+            <h5>Pat<span>- New Dog Owner</span></h5>
+          </div>
+        </blockquote>
+      </figure>
+      <figure class="snip1139">
+        <blockquote>Petiquette was recommended to me by a close friend.  I checked it out and was pleased with the results after training my puppy. 
+          <div class="author">
+            <h5>Tim<span>- Puppy Owner</span></h5>
+          </div>
+        </blockquote>
+      </figure>
+    </section>
+</body>

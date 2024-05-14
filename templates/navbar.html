@@ -1,0 +1,64 @@
+{% load static %}
+<!--
+Author: Amy Mummert 
+Date: 1/23/2023
+Description: navbar.html contains the navigation bar for Petiquette.
+-->
+<!DOCTYPE HTML>
+<!--<head> contains css, js links, lang, charset, meta, and links to google fonts.-->
+<head>
+  <html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+  <script src="{% static 'scripts/static.js' %}"></script>
+   <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<!--<body> contains the navigation bar html with a myFunction button as well as a sticky navbar-->
+<body>
+  
+  <header class="sticky">
+    <p class="petiquettetitle">Petiquette</p>
+  </header>
+  <nav> 
+    <input type="checkbox" id="nav-menu"></input>
+    <label for="nav-menu">
+    <div class="hide-des">
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+      <span class="menu-line"></span>
+    </div>
+  </label>
+  <div class="page-color"></div>
+  <div class="nav-menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dogtraining">Dog Training</a></li>
+      <li><a href="/dogprofile">Create Dog Profile</a></li>
+      <li><a href="/dogprofile/madeProfile">Dog Profile</a></li>
+      <li><a href="/new">Subscribe to Our Newsletter</a></li>
+    </ul>
+  </div>
+  <form id="searchbox" action="">
+    <input type="text" name="search" placeholder="Search" value="{{request.GET.title}}">
+    <input type="submit" value="Search">
+  </form>
+  </nav>
+</body>
+
+<footer id='footer-section'>
+<!-- Social media links and Footer-->
+  <a  href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="noopener noreferrer"></a>
+  <br>
+  <a  href="https://www.twitter.com/" class="fa fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+  <br>
+  <a  href="https://www.instagram.com/" class="fa fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+  <p id="footer-text">Copyright 2023: Amy Mummert All rights reserved. </p><br>
+  <p id="footer-text_2"> Images @ Pixabay.com and www.freepik.com</p>
+</footer>

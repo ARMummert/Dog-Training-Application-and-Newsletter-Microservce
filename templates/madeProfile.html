@@ -1,0 +1,38 @@
+{% include 'navbar.html' %}
+{% load static %}
+{% load crispy_forms_field %}
+{% load crispy_forms_tags %}
+{% load bootstrap4 %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_utils %}
+
+<!DOCTYPE html>  
+<html lang="en"> 
+
+<head>  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'scripts/static.js' %}"></script> 
+</head> 
+
+<body>  
+    <h1 class="profile_header">Your Dog's Profile</h1>
+    <div>
+        <img class="profile_img" src="{{ latest_profile.image.url }}" alt="Profile Image">
+    </div>
+    <section id="made_profile_section" >
+        <p class="made_profile"><strong class="space">Full Name:  </strong> {{ latest_profile.fullname }}</p>
+        <p class="made_profile"><strong class="space">Nickname:  </strong> {{ latest_profile.nickname }}</p>
+        <p class="made_profile"><strong class="space">Gender:  </strong> {{ latest_profile.gender }}</p>
+        <p class="made_profile"><strong class="space">Breed:  </strong> {{ latest_profile.breed }}</p>
+        <p class="made_profile"><strong class="space">Age:  </strong> {{ latest_profile.age }}</p>
+        <p class="made_profile"><strong class="space">Favorite Toy:  </strong> {{ latest_profile.toy }}</p>
+    </section>
+</body>
+</html>
