@@ -19,10 +19,13 @@ This application contains two parts:
 
 - Clone from Github
 - run npm install
-- pipenv install celery
-- pipenv install dotenv 
-- pipenv install psycopg2-binary 
-- pip install celery also works if pipenv does not
+- pip install celery
+- pip install dotenv 
+- pip install psycopg2-binary 
+- pip install django-embed-video
+- pip install django-crispy-forms
+- pip install sendgrid
+- pip install pillow
 - You will have to have rabbitMQ, PostgreSQL, and Docker installed on your PC before you can begin
     - https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
     - https://www.postgresql.org/docs/current/tutorial.html
