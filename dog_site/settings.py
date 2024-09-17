@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 from urllib.parse import urlparse
 
+DEBUG = True
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,9 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('')
+SECRET_KEY = [os.getenv('SECRET_KEY')]
 
-ALLOWED_HOSTS = [os.getenv('http://127.0.0.1:8000/')]
+ALLOWED_HOSTS = [os.getenv('http://localhost:8000/', '127.0.0.1')]
 
 # Application definition
 
@@ -36,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'embed_video',
     'crispy_forms',
-
 ]
+
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,12 +88,12 @@ CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL')
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.getenv("DB_NAME", "postgres"),
-        "USER": os.getenv("DB_USERNAME", "postgres"),
-        "PASSWORD": os.getenv("DB_PASSWORD", ""),
-        "HOST": os.getenv("DB_HOST", "localhost"),
-        "PORT": os.getenv("DB_PORT", "5432")
+        'USER': os.getenv("DB_USER", "postgres"),
+        'PASSWORD': os.getenv("DB_PASSWORD", "NinersRule!$"),
+        'HOST': os.getenv("DB_HOST", "localhost"),
+        'PORT': os.getenv("DB_PORT", "5432"),
     }
 }
 

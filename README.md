@@ -4,6 +4,7 @@ This application contains two parts:
 - A dog training application with an option for owners to create their dog a profile
 - A newsletter subscription microservice that utilizes Django, Python, RabbitMQ, Docker, Celery, and the PostgreSQL Database.
 - The newsletter microservice allows users to subscribe to newsletters and receive them via email.
+
 # Requirements:
 
 - Python 3+ version
@@ -15,6 +16,7 @@ This application contains two parts:
 - RabbitMQ
 - PostgreSQL Database
 - Twilio - Sendgrid https://www.twilio.com/
+
 # Installation 
 
 - Clone from Github
@@ -26,6 +28,8 @@ This application contains two parts:
 - pip install django-crispy-forms
 - pip install sendgrid
 - pip install pillow
+- pip install whitenoise
+- pip install -r requirements.txt
 - You will have to have rabbitMQ, PostgreSQL, and Docker installed on your PC before you can begin
     - https://www.architect.io/blog/2021-01-19/rabbitmq-docker-tutorial/
     - https://www.postgresql.org/docs/current/tutorial.html
